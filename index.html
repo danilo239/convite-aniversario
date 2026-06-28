@@ -20,8 +20,9 @@
         }
 
         .container {
+            position: relative;
             width: 100%;
-            max-width: 700px; /* Ajuste conforme desejar */
+            max-width: 700px;
         }
 
         .container img {
@@ -29,13 +30,35 @@
             height: auto;
             display: block;
         }
+
+        /* Área invisível clicável do WhatsApp */
+        .whatsapp {
+            position: absolute;
+
+            /* Ajuste esses valores para posicionar o botão */
+            bottom: 8%;
+            left: 25%;
+            width: 50%;
+            height: 8%;
+
+            cursor: pointer;
+        }
+
     </style>
 </head>
 
 <body>
 
     <div class="container">
+
         <img src="convite.png" alt="Convite de Aniversário">
+
+        <!-- Área clicável -->
+        <a class="whatsapp"
+           href="https://wa.me/5511999999999?text=Olá!%20Confirmo%20minha%20presença%20na%20festa!"
+           target="_blank">
+        </a>
+
     </div>
 
 </body>
